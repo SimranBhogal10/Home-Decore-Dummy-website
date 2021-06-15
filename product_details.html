@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="with=device-width, initial scale=1.0">
+        <title>Products Details-Home Decor</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+      <div class="sub-header">
+         <div class="container">
+           <div class="navbar">
+            <div class="logo">
+              <img src="img/home1.png" width="125px">
+            </div>
+             <nav>
+                <ul id="MenuItems">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">PRODUCTS</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">ACCOUNT</a></li>
+                </ul>
+             </nav>
+             <img src="https://img.icons8.com/cotton/64/000000/menu.png"/ class="menu-icon" onclick="menutoggle()">
+           </div>
+          </div>
+        </div>
+
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="img/sofa1.jpg" width="90%">
+                </div>
+                <div class="col-2">
+                    <p>Home/Sofa</p>
+                    <h1>Plain Cream Sofa Set</h1>
+                    <h4>$100.00</h4>
+                    <a href="" class="btn">Add to Cart</a>
+                    <h3>Product Details</h3>
+                    <p><em>"Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut labore et <br> dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud <br> exercitation ullamco laboris nisi <br> ut aliquip ex ea commodo consequat.</em></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="small-container">
+            <div class="row row-2">
+              <h2>Related Products</h2>
+              <p>View More</p>
+            </div>
+
+        
+
+        <div class="small-container">
+          <div class="row">
+            <div class="col-4">
+              <img src="img/product-sofa-1.jpg">
+              <h4>Sofa</h4>
+              <p>$100.00</p>
+            </div>
+            <div class="col-4">
+              <img src="img/double-glory-bedsheets.jpg">
+              <h4>Glory Bedsheet</h4>
+              <p>$75.00</p>
+            </div>
+            <div class="col-4">
+              <img src="img/product-sofa-2.jpg">
+              <h4>Cushions(Set of 6)</h4>
+              <p>$50.00</p>
+            </div>
+            <div class="col-4">
+              <img src="img/product-sofa-3.jpg">
+              <h4>Fine Carpet</h4>
+              <p>$20.00</p>
+            </div>
+            
+          </div>
+
+          <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+          </div>
+
+          <div class=""></div>
+           
+        </div>
+
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download app for android and ios mobile phone.</p>
+                <div class="app-logo">
+                  <img src="img/img1.jpg">
+                  <img src="img/img2.jpg">
+                </div>
+              </div>
+              <div class="footer-col-2">
+                <img src="img/home1.png">
+                <p>We are here to decorate the new era.</p>
+              </div>
+              <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                  <li>Coupons</li>
+                  <li>Blog Post</li>
+                  <li>Return Policy</li>
+                  
+                </ul>
+              </div>
+              <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                  <li>Facebook</li>
+                  <li>Twitter</li>
+                  <li>Instagram</li>
+                  <li>YouTube</li>
+                </ul>
+              </div>
+            </div>
+            <p class="copyright">Copyright 2021 - Simran Bhogal</p>
+          </div>
+        </div>
+
+       <script>
+         var MenuItems= document.getElementById("MenuItems");
+         MenuItems.style.maxHeight="0px";
+
+         function menutoggle(){
+           if(MenuItems.style.maxHeight=="0px")
+           {
+            MenuItems.style.maxHeight="200px";
+           }
+           else{
+            MenuItems.style.maxHeight="0px";
+           }
+         }
+       </script>
+       
+        
+    </body>
+</html>

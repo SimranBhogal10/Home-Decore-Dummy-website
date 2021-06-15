@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="with=device-width, initial scale=1.0">
+        <title>Cart Items-Home Decor</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+      <div class="sub-header">
+         <div class="container">
+           <div class="navbar">
+            <div class="logo">
+              <img src="img/home1.png" width="125px">
+            </div>
+             <nav>
+                <ul id="MenuItems">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">PRODUCTS</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">ACCOUNT</a></li>
+                </ul>
+             </nav>
+             <img src="https://img.icons8.com/cotton/64/000000/menu.png"/ class="menu-icon" onclick="menutoggle()">
+           </div>
+          </div>
+        </div>
+
+        <div class="small-container cart-page">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="img/sofa1.jpg">
+                            <div>
+                                <p>Plain Cream Sofa Set</p>
+                                <small>$100.00</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$100.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="img/product-sofa-2.jpg">
+                            <div>
+                                <p>Cushions</p>
+                                <small>$50.00</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$50.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="img/double-glory-bedsheets.jpg">
+                            <div>
+                                <p>Glory Bedsheet</p>
+                                <small>$75.00</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$75.00</td>
+                </tr>
+            </table>
+
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$225.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>$69.50</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$294.50</td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+
+        </div>
+
+        
+        
+
+        
+
+          <div class=""></div>
+           
+        </div>
+
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download app for android and ios mobile phone.</p>
+                <div class="app-logo">
+                  <img src="img/img1.jpg">
+                  <img src="img/img2.jpg">
+                </div>
+              </div>
+              <div class="footer-col-2">
+                <img src="img/home1.png">
+                <p>We are here to decorate the new era.</p>
+              </div>
+              <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                  <li>Coupons</li>
+                  <li>Blog Post</li>
+                  <li>Return Policy</li>
+                  
+                </ul>
+              </div>
+              <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                  <li>Facebook</li>
+                  <li>Twitter</li>
+                  <li>Instagram</li>
+                  <li>YouTube</li>
+                </ul>
+              </div>
+            </div>
+            <p class="copyright">Copyright 2021 - Simran Bhogal</p>
+          </div>
+        </div>
+
+       <script>
+         var MenuItems= document.getElementById("MenuItems");
+         MenuItems.style.maxHeight="0px";
+
+         function menutoggle(){
+           if(MenuItems.style.maxHeight=="0px")
+           {
+            MenuItems.style.maxHeight="200px";
+           }
+           else{
+            MenuItems.style.maxHeight="0px";
+           }
+         }
+       </script>
+       
+        
+    </body>
+</html>

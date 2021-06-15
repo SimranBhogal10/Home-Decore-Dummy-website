@@ -1,0 +1,21 @@
+<div id="dvImage" style="height: auto; width: auto;">
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+</script>
+<script type="text/javascript">
+  var images=["PDH-residence-4-Altis-Elan-P3_Great-Room_1300x750.jpg","c2.jpg","c3.jpg","c4.jpg","c5.jpg"];
+  $(function(){
+      var i=0;
+      $("#dvImage").css("background-image","url(img/" + images[i] + ")");
+      setInterval(function(){
+          i++;
+          if(i==images.length){
+              i=0;
+          }
+          $("dvImage").fadeOut("slow", function(){
+              $(this).css("background-image", "url(img/" + images[i] + ")");
+              $(this).fadeIn("slow");
+          });
+      },5000);
+      })
+</script>

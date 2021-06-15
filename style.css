@@ -1,0 +1,497 @@
+*{
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(145, 148, 151, 0.7),rgba(145, 148, 151, 0.7)),url(img/PDH-residence-4-Altis-Elan-P3_Great-Room_1300x750.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: 5s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes animate {
+    25%{
+        background-image: linear-gradient(rgba(145, 148, 151, 0.7),rgba(145, 148, 151, 0.7)), url(img/c3.jpg);
+    }
+    50%{
+        background-image:linear-gradient(rgba(145, 148, 151, 0.7),rgba(145, 148, 151, 0.7)), url(img/c4.jpg);
+    }
+    75%{
+        background-image:linear-gradient(rgba(145, 148, 151, 0.7),rgba(145, 148, 151, 0.7)), url(img/c5.jpg);
+    }
+    100%{
+        background-image:linear-gradient(rgba(145, 148, 151, 0.7),rgba(145, 148, 151, 0.7)), url(img/PDH-residence-4-Altis-Elan-P3_Great-Room_1300x750.jpg);
+    }
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+   flex: 1;
+   text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+p{
+    color: black;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.m1{
+    margin-top: 175px;
+    text-align: center;
+    flex-basis: 100%;
+    min-width: 200px;
+}
+.m1 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 20px;
+    color:black;
+    margin-bottom: auto;
+}
+.m1 p{
+    font-size: 30px;
+}
+.categories{
+    margin: 50px 0;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+    height: 380px;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25x;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 100%;
+    height: 200px;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 50px;
+    position: relative;
+    line-height: 60px;
+    color: gray;
+    padding-top: 25px;
+}
+.title::after{
+    content: '';
+    background: rosybrown;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.col-4 p{
+    font-size: 15px;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+.footer{
+    margin-top: auto;
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 40px;
+    width: 100%;
+}
+.footer p{
+     color:  #8a8a8a;
+     margin-left: 10px;
+     
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+     min-height: 500px;
+     
+}
+.footer-col-1{
+    flex-basis: 22%;
+    
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+    
+}
+.footer-col-2 img{
+    width: 40%;
+    height: auto;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align:justify;
+}
+.footer-col-3 .h3{
+    text-align: right;
+
+}
+ul{
+    list-style-type: none;
+    flex-basis: 20px;
+    text-align:justify;
+
+}
+.app-logo{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.app-logo img{
+    width: 120px;
+    padding: 3px;
+}
+.copyright{
+    text-align: center;
+}
+.menu-icon{
+    width: 40px;
+    margin-left: 20px;
+    display: none;
+}
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: white;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: right;
+    }
+    nav ul li a{
+        color: black;
+    }
+    .menu-icon{
+        margin-right: 1px;
+        display: block;
+        cursor: pointer;
+    }   
+    .footer-col-1{
+        flex-basis: 100%;
+        
+    }
+    .footer-col-2{
+        flex: 1;
+        text-align: center;
+        
+    }
+    .footer-col-2 img{
+        width: 50%;
+        height: 200px;
+    }
+    .footer-col-3, .footer-col-4{
+        flex-basis: 100%;
+        text-align:right;
+    }
+    .footer-col-3 .h3{
+        flex-basis: 100%;
+        text-align: right;
+    }
+    ul{
+        list-style-type: none;
+        flex-basis: 12%;
+        text-align:justify;
+    
+    }
+    .app-logo{
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+    .app-logo img{
+        width: 100px;
+        padding: 3px;
+        height: auto;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+        
+    }
+    .m1 h1{
+        margin-top: 100px;
+    }
+    .col-3, .col-4{
+        width: 100%;
+        flex-basis: 100%;
+        margin-right: 10px;
+        align-items: center;
+    }
+}
+
+/*Product Page*/
+
+.sub-header{
+    height: 15vh;
+    width: 100%;
+    background: black;
+}
+.row-2{
+  justify-content: space-between;
+  margin: 70px auto 50px;
+}
+select{
+    margin-right: 10px;
+    border: 2px solid gray;
+    padding: 5px;
+}
+.page-btn{
+    margin: 0 auto 80px;
+
+}
+.page-btn span{
+   display: inline-block;
+   border: 1px solid gray;
+   margin-left: 10px;
+   width: 40px;
+   height: 40px;
+   text-align: center;
+   line-height: 35px;
+   cursor: pointer;
+   font-weight: bold;
+}
+.page-btn span:hover{
+    background:rosybrown;
+    
+}
+
+
+.btn{
+    display: inline-block;
+    background: rosybrown;
+    color: black;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: blanchedalmond;
+}
+.single-product{
+    margin-top: 80px;
+
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product .col-2 img{
+    padding-top: 10px;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/*cart-items*/
+
+.cart-page{
+    margin: 30px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+    
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: black;
+    background: rosybrown;
+    font-weight: bold;
+    padding-right: 0px;
+}
+td{
+    padding: 20px 10px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: rosybrown;
+    font-size: 12px;
+}
+td img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.total-price table{
+    border-top: 3px solid rosybrown;
+    width: 100%;
+    max-width: 170px;
+    justify-content: space-between;
+    text-align: justify;
+}
+td:last-child{
+    text-align: justify;
+}
+th:last-child{
+    text-align: justify;
+}
+
+.form-container{
+    background: white;
+    width: 400px;
+    height: 450px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(91, 23, 131, 0.1);
+    overflow: hidden;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+
+}
+.form-container form{
+    max-width: 400px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+form input{
+    width: 80%;
+    height: 30px;
+    margin: 10px 30px;
+    padding: 10px 50px;
+    border: 1px solid #ccc;
+}
+form .btn{
+    width: 90%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+#LoginForm{
+    left: -400px;
+}
+#RegisterForm{
+    left: 0;
+}
+form a{
+    font-size: 12px;
+}
+#Indicator{
+    width: 100px;
+    border: none;
+    background: rosybrown;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+.form-container a{
+    color: black;
+    text-align: center;
+}
